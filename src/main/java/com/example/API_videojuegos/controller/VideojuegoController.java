@@ -21,7 +21,7 @@ public class VideojuegoController {
     }
     @GetMapping("/hola/{name}")
     public String saludoDinamico(@PathVariable String name){
-        return "Hola, "+name;
+        return "Hola, mi nombre es: "+name;
     }
     @GetMapping("/suma/{x}/{y}")
     public String sumaConParametrs(@PathVariable int x, @PathVariable int y){
